@@ -1,0 +1,9 @@
+<div>
+  <% if @has_client.nil? %>
+    <a href="<%= @authorization_url %>">Authorize Oyster Developer App</a>
+  <% else %>
+    <a href="/auth/refresh_token">Refresh Token</a>
+    <br />
+    <a href="/partner/session">Generate Session Token</a>
+  <% end %>
+</div>
